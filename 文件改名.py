@@ -2,7 +2,7 @@ import os
 import exifread
  
 def getExif(filename):
-    FIELD = 'EXIF DateTimeOriginal'
+    FIELD = 'EXIF DateTimeOriginal'# 拍摄日期的标识
     filedir = open(filename, 'rb')
     tags = exifread.process_file(filedir)
     filedir.close()
